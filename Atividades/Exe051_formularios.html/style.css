@@ -1,0 +1,32 @@
+
+.titulo{
+    background-color: rgb(32, 34, 133); 
+    color: rgb(255, 255, 255);
+    /* Aplica margem em todas as laterais*/
+    /*margin: 10px; */
+    /*margin-left: 20px; 1 */
+    /* Aplico o espaçamento no superior e inferior*/
+    /* Aplico tambem nas laterais esquerda e direita*/
+    /*margin: 0 20px;*/
+    margin: 0 10px 0 0;
+    /* Aplicando espaçamento interno*/
+    /*padding: 10px;*/
+    padding: 0 10px;
+}
+a{
+    margin-left: 5px;
+}
+
+.barra_navegacao{
+   background-color: blue; 
+   color: darkgrey;
+   font-size: large;
+   padding-left: 5px;
+}
+
+.link_login{
+    margin-left: 200px;
+}
+img{
+    width: 80%;
+}
