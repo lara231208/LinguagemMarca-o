@@ -1,8 +1,9 @@
 :root{
-    --cor-vermelho-ifood: #ea1d2c;
-    --cor-cinza-texto: #575757;
+    --cor-verde-starbucks: #00704A;
+    --cor-preto-texto: #000000;
     --cor-cinza-borda: #e2e2e2;
-    --cor-fundo: #f7f7f7;
+    --cor-fundo: #F7F7F7;
+
 }
 /* Zerando as propriedades do documento */
 *{
@@ -52,21 +53,17 @@ body{
 /* ao passar, ficar vermelho */
 .item:focus,
 .item:hover{
-    color: var(--cor-vermelho-ifood);
-    border-bottom-color: var(--cor-vermelho-ifood);
+    color: var(--cor-verde-starbucks);
+    border-bottom-color: var(--cor-verde-starbucks);
 }
 
 .buscar{
-    padding: 10px;
+    padding: 3px;
     border: 1px solid var(--cor-cinza-borda);
     border-radius: 8px;
     width: 10rem;
 }
-.localizacao{
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-}
+
 
 .texto-local{
     border: none;
@@ -77,17 +74,17 @@ body{
 .acao{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 60px;
 }
 
 .criar-conta{
     text-decoration: none;
-    color: var(--cor-vermelho-ifood);
+    color: var(--cor-verde-starbucks);
     font-weight: 600;
 }
 
 .botao-entrar{
-    background-color: var(--cor-vermelho-ifood);
+    background-color: var(--cor-verde-starbucks);
     color:var(--cor-fundo);
     border: none;
     padding: 10px 20px;
@@ -96,22 +93,68 @@ body{
     cursor: pointer;
 }
 
-.card-produtos{
+.botao-participe{
+    background-color: var(--cor-verde-starbucks);
+    color:var(--cor-fundo);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.localizacao{
+    height: 8vh;
+}
+
+.menu-direita{
+    display: flex;
+    
+}
+.imagem1{
+    background-image: url("./img/starbucks.png");
+    height: 100%;
+    width: 100%;
+}
+#comunicado{
+    background-color: rgb(212, 233, 226);
+    margin-top: 1rem;
+    height: 25vh;
     display: flex;
     flex-direction: column;
-    width: 6vw;
+    align-items: center;
+    gap: 0.5rem;
+   justify-content: center;
+}
+.imagem-texto p{
     text-align: center;
-    transition: transform 0.2s ease;
-    margin-top: 30px;
-
 }
-.card-produtos:hover{transform: translateY(-5px);} 
-
-.card-produtos img{
-    border-radius: 50%;
+.Saiba-mais{
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    padding: 0.5rem;
+    border-radius: 25px;
+    margin-top: 5px;
 }
-
-.secao-um{
+.banner-tres{
     display: flex;
-    gap: 100px;
+}
+.tamanho{
+    width: 50%;
+    margin-top: 20px;
+}
+.estilo-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     background-color: rgb(212, 233, 226);
+}
+.banner-quatro{
+    display: flex;
+}
+.tamanho2{
+    width: 50%;
+    margin-top: 10px;
 }
