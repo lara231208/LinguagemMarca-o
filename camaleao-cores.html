@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camaleão cores</title>
+</head>
+<body>
+    <style>
+        .info-tela{
+            font-size: 1.8rem;
+            color: #ffc107;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .texto-tablet,
+        .texto-notebook,
+        .texto-tela-grande{
+            display: none;
+            /* os tres elementos não serão mostrados na tela */
+        }
+        /* Media qaurties para e o conteudo se adaptar a tela */
+        @media (min-width: 600px){
+            .texto-celular{display: none;}
+            .texto-tablet{display: block;}
+        }
+         @media (min-width: 992px) {
+            .texto-tablet{display: none;}
+            .texto-notebook{display:block;}
+         }
+    </style>
+    <h1>Mudando de cor</h1>
+    <div class="info-tela">
+       <span class="texto-celular">VISUALIZAÇÃO: CELULAR</span>
+       <span class="texto-tablet">VISUALIZAÇÃO: TABLET</span>
+       <span class="texto-notebook">VISUALIZAÇÃO: NOTEBOOK</span>
+       <span class="texto-tela-grande">VISUALIZAÇÃO: TELA GRANDE</span>
+    </div>
+</body>
+</html>
